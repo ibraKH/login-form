@@ -61,7 +61,7 @@ body{
 }
 .bg{
     position: relative;
-    background-image: url("/images/bg.jpg");
+    background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -338,7 +338,7 @@ body{
     top: -2px;
     width: 25px;
     height: 25px;
-    background-image: url("/images/Profile.png");
+    background-image: url("images/Profile.png");
 }
 .email{
     position: relative;
@@ -350,7 +350,7 @@ body{
     top: -2px;
     width: 25px;
     height: 25px;
-    background-image: url("/images/Message.png");
+    background-image: url("images/Message.png");
 }
 .eye{
     position: relative;
@@ -364,7 +364,7 @@ body{
     height: 25px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("/images/Show.png");
+    background-image: url("images/Show.png");
 }
 input {
     -webkit-appearance: none;
