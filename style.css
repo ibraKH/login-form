@@ -1,0 +1,372 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #272A37;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.white{
+    color: white;
+}
+.blue{
+    color: #1D90F5;
+}
+.gray{
+    color: #6C7483;
+}
+#preload{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header{
+    position: relative;
+    width: 50%;
+    height: 100px;
+}
+#leftHeader{
+    position: relative;
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+#rightHeader{
+    position: relative;
+    display: flex;
+    align-items: center;
+    float: right;
+    width: 60%;
+    height: 100%;
+}
+.headerText{
+    margin: 0 0px 0 120px;
+    cursor: pointer;
+}
+.moon{
+    width: 90px;
+    height: 70px;
+}
+#bg{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    background-color: #272a37;
+    right: 0;
+}
+.bg{
+    position: relative;
+    background-image: url("/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 96%;
+    right: 0;
+    border-bottom-left-radius: 40%;
+}
+#main{
+    position: absolute;
+    left: 5%;
+    width: 100%;
+    height: 60%;
+    top: 200px;
+}
+#topMain{
+    position: relative;
+    height: 30%;
+    width: 100%;
+}
+#bottomMain{
+    margin-top: 40px;
+    position: relative;
+    height: 70%;
+    width: 100%;
+}
+.inputs{
+    background-color: #323644;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+    margin: 0 0 20px 15px;
+    padding: 5px;
+    color: white;
+    font-size: large;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.buttons{
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    background-color: #555B69;
+    margin: 20px 0 15px 15px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+.logo{
+    overflow: hidden;
+    position: absolute;
+    width: 200px;
+    height: 121px;
+}
+.corner{
+    right: 60px;
+    bottom: 40px;
+}
+.shapesContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.leftCircle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.rightCircle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.leftShape{
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    z-index: 2;
+}
+.centerShape{
+    position: absolute;
+    top: -5px;
+    left: 40px;
+    z-index: 1;
+}
+.rightShape{
+    position: absolute;
+    top: 0px;
+    left: 95px;
+    z-index: 2;
+}
+#LastLine{
+    margin-left: 10px;
+}
+.blueBG{
+    background-color: #1D90F5;
+    box-shadow: 0 5px 11px 1px #1d90f536;
+}
+.lines{
+    width: 500px;
+}
+.fullWidth{
+    width: 95%;
+}
+.halfWidth{
+    width: 44.5%;
+}
+.bigFont{
+    margin: 0;
+    font-size: 60px;
+}
+.logIn{
+    margin-top: 10px;
+}
+.point{
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.ibra{
+    margin-top: 200px;
+    color: white;
+}
+@media only screen and (min-width: 800px){
+    body{
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width: 625px){
+    body{
+        overflow-x: hidden;
+    }
+    .mainLogo{
+        display: none;
+    }
+    #main{
+        width: 100%;
+        left: 20px;
+        height: 100%;
+    }
+    .inputs{
+        margin: 0 15px 20px 0;
+    }
+    .buttons{
+        margin: 20px 15px 15px 0;
+    }
+}
+@media only screen and (max-width: 625px) and (min-width: 405px){
+    body{
+        overflow-x: hidden;
+    }
+    #bg{
+        width: 70%;
+        height: 80%;
+    }
+    #parent{
+        width: 100%;
+        height: 100%;
+    }
+    .mainLogo{
+        display: none;
+    }
+    #bottomMain{
+        left: 5%;
+    }
+    #main{
+        left: 2.5%;
+        width: 95%;
+        height: 100%;
+    }
+    .lines{
+        width: 90%;
+    }
+    .inputs{
+        margin: 0 5px 20px 0;
+    }
+    .buttons{
+        margin: 20px 5px 15px 0;
+    }
+    #header{
+        width: 100%;
+    }
+    #rightHeader{
+        width: 40%;
+        justify-content: right;
+        right: 40px;
+    }
+    .headerText{
+        right: 0;
+        margin: 0 0px 0 50px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 405px) {
+    #bottomMain{
+        left: 0%;
+    }
+    #bg{
+        width: 80%;
+        height: 60%;
+    }
+    .lines{
+        width: 100%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #parent{
+        width: 100%;
+        height: 100%;
+    }
+    .mainLogo{
+        display: none;
+    }
+    #main{
+        left: 10px;
+        width: 90%;
+        height: 100%;
+    }
+    .inputs{
+        margin: 0 5px 20px 0;
+    }
+    .buttons{
+        margin: 20px 5px 15px 0;
+    }
+    #header{
+        width: 100%;
+    }
+    #rightHeader{
+        width: 40%;
+        justify-content: right;
+        right: 40px;
+    }
+    .headerText{
+        right: 0;
+        margin: 0 0px 0 50px;
+        cursor: pointer;
+    }
+}
+.inputs:focus::placeholder{
+    color: #1D90F5;
+}
+.inputs::placeholder{
+    margin: 4px 0 0 10px;
+    color: #6C7483;
+    font-family: 'Quicksand', sans-serif;
+}
+.inputs:focus::-ms-input-placeholder{
+    color: #1D90F5;
+}
+.inputs::-ms-input-placeholder{
+    
+    margin: 4px 0 0 10px;
+    color: #6C7483;
+    font-family: 'Quicksand', sans-serif;
+}
+.inputs:focus::-ms-input-placeholder{
+    outline: #1D90F5 solid !important;
+    box-shadow: 0 0 2px 6px #1d90f555;
+}
+.inputs:focus{
+    outline: #1D90F5 solid !important;
+    box-shadow: 0 0 2px 6px #1d90f555;
+}
+.personal{
+    position: relative;
+}
+.personal::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: -2px;
+    width: 25px;
+    height: 25px;
+    background-image: url("/images/Profile.png");
+}
+.email{
+    position: relative;
+}
+.email::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: -2px;
+    width: 25px;
+    height: 25px;
+    background-image: url("/images/Message.png");
+}
+.eye{
+    position: relative;
+}
+.eye::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: -2px;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/images/Show.png");
+}
+input {
+    -webkit-appearance: none;
+    outline: 50%;
+}
